@@ -11,6 +11,7 @@
     --fg: #1a1a1a;
     --muted: #5c6470;
     --line: #e3e6ea;
+    --line-strong: #aab2bd;
     --card: #f7f8fa;
     --accent: #2563eb;
   }
@@ -20,6 +21,7 @@
       --fg: #e8eaed;
       --muted: #9aa3ae;
       --line: #262c34;
+      --line-strong: #4a5563;
       --card: #171c22;
       --accent: #6ea8fe;
     }
@@ -55,6 +57,7 @@
   }
   section { padding: 2.75rem 0; }
   section + section { border-top: 1px solid var(--line); }
+  section.divide-strong { border-top: 3px solid var(--line-strong); }
   h2 {
     font-size: 1.15rem;
     margin: 0 0 1rem;
@@ -122,7 +125,7 @@
     </ul>
   </section>
 
-  <section>
+  <section class="divide-strong">
     <h2>このページについて</h2>
     <p>医学教育に繋げる一般教育として、教材づくりや講義運営に AI をどう組み込めるかを、実際に動くかたちで共有するために用意した公開ページです。</p>
   </section>
