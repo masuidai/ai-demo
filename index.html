@@ -64,6 +64,28 @@
   li { margin-bottom: 0.5rem; }
   li:last-child { margin-bottom: 0; }
   a { color: var(--accent); }
+  .note {
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  .demos {
+    list-style: none;
+    padding: 0;
+    margin-top: 1.25rem;
+  }
+  .demos li {
+    padding: 0.75rem 0;
+    border-top: 1px solid var(--line);
+  }
+  .demos li:last-child { border-bottom: 1px solid var(--line); }
+  .demos a {
+    display: block;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.15rem 0;
+  }
+  .demos a:hover { text-decoration: underline; }
+  .demos .note { display: block; line-height: 1.6; }
   footer {
     border-top: 1px solid var(--line);
     padding: 2rem 0 3.5rem;
@@ -93,6 +115,25 @@
       <li>講義アンケートの自動分析と、質問への回答スライド生成</li>
       <li>教材コンテンツの下書き作成と推敲の支援</li>
       <li>学生からの質問への回答案づくりと、その検証</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>対話型試問デモ</h2>
+    <p class="note">医学部1年生向けの概念実証デモです。以下から直接お試しいただけます（スマートフォン可、登録不要）。</p>
+    <ul class="demos">
+      <li>
+        <a href="https://udify.app/chat/iwU9K5dOceuQE7Jq">Topic A — 医学的探究</a>
+        <span class="note">科学的・批判的思考の基本について問いかけます。</span>
+      </li>
+      <li>
+        <a href="https://udify.app/chat/LoiRsyu5yi8gdlj8">Topic B — 基礎医学の意義</a>
+        <span class="note">人体をシステムとして理解する意味を扱います。</span>
+      </li>
+      <li>
+        <a href="https://udify.app/chat/mjrAh48DeTiEpHa0">Topic C — 医療プロフェッショナリズム</a>
+        <span class="note">医療者としての姿勢や態度について問いかけます。</span>
+      </li>
     </ul>
   </section>
 
